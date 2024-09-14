@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(45deg, #FF5733, #06aa5a, #3357FF);
+  height: 100vh;
+}
+.gridbox {
+  display: grid;
+  gap: 1em;
+  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  justify-content: center;
+
+}
+.img img {
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    max-height: 150px;
+    background-position: top;
+}
+.card {
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.card p {
+  opacity: .6;
+  color: rgb(255, 255, 255);
+  word-wrap: break-word;
+}
